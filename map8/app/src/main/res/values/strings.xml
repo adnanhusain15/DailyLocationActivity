@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">map8</string>
+    <string name="api">AIzaSyADIzHdkYcqSJkHmJppja5RA4hA3M0kTsA</string>
+    <string name="title_activity_maps">Map</string>
+</resources>

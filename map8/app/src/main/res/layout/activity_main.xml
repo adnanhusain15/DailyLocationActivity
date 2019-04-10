@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/Widget.AppCompat.TextView.SpinnerItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/end"
+        android:layout_alignEnd="@+id/textView2"
+        android:focusable="false"
+        android:editable="false"
+        android:text="End Date" />
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/Widget.AppCompat.TextView.SpinnerItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/start"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="19dp"
+        android:editable="false"
+        android:focusable="false"
+        android:text="Start Date" />
+
+    <EditText
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/end"
+        android:layout_marginTop="108dp"
+        android:ems="10"
+        android:focusable="false"
+        android:inputType="date"
+        android:onClick="start"
+        tools:ignore="OnClick" />
+
+    <EditText
+        android:id="@+id/end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="55dp"
+        android:layout_marginTop="182dp"
+        android:ems="10"
+        android:focusable="false"
+        android:inputType="date"
+        android:onClick="end"
+        tools:ignore="OnClick" />
+
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="131dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/button"
+        android:layout_marginEnd="58dp"
+        android:onClick="chkk"
+        android:text="View on map"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/button4"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="170dp"
+        android:onClick="chk"
+        android:text="Check"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/button5"
+        android:layout_marginStart="43dp"
+        android:onClick="ss"
+        android:text="Start service"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="136dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/start"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="114dp"
+        android:onClick="es"
+        android:text="Stop service"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/updateloc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:text="Update Loc"
+        android:onClick="updateloc"
+        tools:ignore="OnClick" />
+
+</RelativeLayout>
