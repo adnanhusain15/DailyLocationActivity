@@ -59,7 +59,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             LatLng locn = new LatLng(entry.getKey(), entry.getValue());
             mMap.addMarker(new MarkerOptions().position(locn));
         }
-
     }
 
     @Override
